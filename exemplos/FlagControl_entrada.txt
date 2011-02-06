@@ -1,0 +1,6 @@
+HDSNAME: FlagControl_saida.hds
+INPUTPORTS: O1 O2 O3 O4 Z P N
+OUTPUTPORTS: END
+
+EXPRESSIONS:
+END = (!N.O1.!O2.!O3.!O4) + (!P.!O1.O2.O3.O4) + (!Z.!O1.O2.O3.!O4)

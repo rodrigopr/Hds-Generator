@@ -1,0 +1,54 @@
+# hades.models.Design file#  
+[name] FlagControl.hds
+[components]
+hades.models.gates.InvSmall dNot7 -22350 6000 @N 1001 5.0E-9
+hades.models.gates.InvSmall dNot8 -17400 9600 @N 1001 5.0E-9
+hades.models.gates.And2 dAnds -10350 0 @N 1001 1.0E-8
+hades.models.gates.And2 dAnd1s -10350 2700 @N 1001 1.0E-8
+hades.models.gates.And2 dAnd2s -10350 5400 @N 1001 1.0E-8
+hades.models.io.Ipin O4 -24600 -2400 @N 1001 null 0
+hades.models.io.Ipin N -27750 -150 @N 1001 null 0
+hades.models.gates.Or3 dOr -4800 0 @N 1001 1.0E-8
+hades.models.gates.InvSmall dNot1 -22350 1500 @N 1001 5.0E-9
+hades.models.io.Ipin O3 -27750 -3150 @N 1001 null 0
+hades.models.gates.InvSmall dNot2 -17400 2700 @N 1001 5.0E-9
+hades.models.gates.InvSmall dNot3 -22350 3000 @N 1001 5.0E-9
+hades.models.io.Ipin O2 -24600 -3900 @N 1001 null 0
+hades.models.gates.InvSmall dNot4 -22350 4500 @N 1001 5.0E-9
+hades.models.io.Ipin O1 -27750 -4650 @N 1001 null 0
+hades.models.gates.InvSmall dNot5 -22350 7500 @N 1001 5.0E-9
+hades.models.gates.And4 dAnd2 -17400 6900 @N 1001 1.0E-8
+hades.models.gates.InvSmall dNot6 -22350 9000 @N 1001 5.0E-9
+hades.models.gates.And4 dAnd1 -17400 4200 @N 1001 1.0E-8
+hades.models.io.Ipin P -24600 -900 @N 1001 null 0
+hades.models.io.Opin END 0 600 @N 1001 5.0E-9
+hades.models.gates.And4 dAnd -17400 0 @N 1001 1.0E-8
+hades.models.io.Ipin Z -27750 -1650 @N 1001 null 0
+hades.models.gates.InvSmall dNot -22350 0 @N 1001 5.0E-9
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 w0 2 Z Y dNot A 3 2 -27750 -1650 -23100 -1650 2 -23100 -1650 -23100 600 2 -23100 600 -22350 600 1 -23100 -1650
+hades.signals.SignalStdLogic1164 w1 2 dNot Y dAnd A 3 2 -20550 600 -18600 600 2 -18600 600 -18600 300 2 -18600 300 -17400 300 0
+hades.signals.SignalStdLogic1164 w2 4 O1 Y dNot1 A dNot4 A dAnd2 B 9 2 -27750 -4650 -22500 -4650 2 -22500 -4650 -22500 2100 2 -22500 2100 -22350 2100 2 -22500 -4650 -22650 -4650 2 -22650 -4650 -22650 5100 2 -22650 5100 -22350 5100 2 -22650 -4650 -17550 -4650 2 -17550 -4650 -17550 7800 2 -17550 7800 -17400 7800 3 -22500 -4650 -22650 -4650 -17550 -4650
+hades.signals.SignalStdLogic1164 w3 2 dNot1 Y dAnd B 3 2 -20550 2100 -18450 2100 2 -18450 2100 -18450 900 2 -18450 900 -17400 900 0
+hades.signals.SignalStdLogic1164 w4 4 O2 Y dAnd C dAnd1 C dNot6 A 9 2 -24600 -3900 -17700 -3900 2 -17700 -3900 -17700 1500 2 -17700 1500 -17400 1500 2 -17700 -3900 -17850 -3900 2 -17850 -3900 -17850 5700 2 -17850 5700 -17400 5700 2 -17850 -3900 -22800 -3900 2 -22800 -3900 -22800 9600 2 -22800 9600 -22350 9600 3 -17700 -3900 -17850 -3900 -22800 -3900
+hades.signals.SignalStdLogic1164 w5 4 O3 Y dAnd D dAnd1 D dNot7 A 9 2 -27750 -3150 -18000 -3150 2 -18000 -3150 -18000 2100 2 -18000 2100 -17400 2100 2 -18000 -3150 -18150 -3150 2 -18150 -3150 -18150 6300 2 -18150 6300 -17400 6300 2 -18150 -3150 -22950 -3150 2 -22950 -3150 -22950 6600 2 -22950 6600 -22350 6600 3 -18000 -3150 -18150 -3150 -22950 -3150
+hades.signals.SignalStdLogic1164 w6 4 O4 Y dNot2 A dAnd1s B dNot8 A 9 2 -24600 -2400 -18300 -2400 2 -18300 -2400 -18300 3300 2 -18300 3300 -17400 3300 2 -18300 -2400 -10500 -2400 2 -10500 -2400 -10500 4500 2 -10500 4500 -10350 4500 2 -10500 -2400 -18450 -2400 2 -18450 -2400 -18450 10200 2 -18450 10200 -17400 10200 3 -18300 -2400 -10500 -2400 -18450 -2400
+hades.signals.SignalStdLogic1164 w7 2 dAnd Y dAnds A 3 2 -13800 1200 -13650 1200 2 -13650 1200 -13650 600 2 -13650 600 -10350 600 0
+hades.signals.SignalStdLogic1164 w8 2 dNot2 Y dAnds B 3 2 -15600 3300 -13500 3300 2 -13500 3300 -13500 1800 2 -13500 1800 -10350 1800 0
+hades.signals.SignalStdLogic1164 w9 2 dAnds Y dOr A 3 2 -6750 1200 -6600 1200 2 -6600 1200 -6600 600 2 -6600 600 -4800 600 0
+hades.signals.SignalStdLogic1164 w10 2 P Y dNot3 A 3 2 -24600 -900 -23250 -900 2 -23250 -900 -23250 3600 2 -23250 3600 -22350 3600 1 -23250 -900
+hades.signals.SignalStdLogic1164 w11 2 dNot3 Y dAnd1 A 3 2 -20550 3600 -18300 3600 2 -18300 3600 -18300 4500 2 -18300 4500 -17400 4500 0
+hades.signals.SignalStdLogic1164 w12 2 dNot4 Y dAnd1 B 3 2 -20550 5100 -18150 5100 2 -18150 5100 -18150 5100 2 -18150 5100 -17400 5100 0
+hades.signals.SignalStdLogic1164 w13 2 dAnd1 Y dAnd1s A 3 2 -13800 5400 -13350 5400 2 -13350 5400 -13350 3300 2 -13350 3300 -10350 3300 0
+hades.signals.SignalStdLogic1164 w14 2 dAnd1s Y dOr B 3 2 -6750 3900 -6450 3900 2 -6450 3900 -6450 1200 2 -6450 1200 -4800 1200 0
+hades.signals.SignalStdLogic1164 w15 2 N Y dNot5 A 3 2 -27750 -150 -23400 -150 2 -23400 -150 -23400 8100 2 -23400 8100 -22350 8100 1 -23400 -150
+hades.signals.SignalStdLogic1164 w16 2 dNot5 Y dAnd2 A 3 2 -20550 8100 -17850 8100 2 -17850 8100 -17850 7200 2 -17850 7200 -17400 7200 0
+hades.signals.SignalStdLogic1164 w17 2 dNot6 Y dAnd2 C 3 2 -20550 9600 -17700 9600 2 -17700 9600 -17700 8400 2 -17700 8400 -17400 8400 0
+hades.signals.SignalStdLogic1164 w18 2 dNot7 Y dAnd2 D 3 2 -20550 6600 -18000 6600 2 -18000 6600 -18000 9000 2 -18000 9000 -17400 9000 0
+hades.signals.SignalStdLogic1164 w19 2 dAnd2 Y dAnd2s A 3 2 -13800 8100 -13200 8100 2 -13200 8100 -13200 6000 2 -13200 6000 -10350 6000 0
+hades.signals.SignalStdLogic1164 w20 2 dNot8 Y dAnd2s B 3 2 -15600 10200 -13050 10200 2 -13050 10200 -13050 7200 2 -13050 7200 -10350 7200 0
+hades.signals.SignalStdLogic1164 w21 2 dAnd2s Y dOr C 3 2 -6750 6600 -6300 6600 2 -6300 6600 -6300 1800 2 -6300 1800 -4800 1800 0
+hades.signals.SignalStdLogic1164 w22 2 dOr Y END A 3 2 -1200 1200 -1050 1200 2 -1050 1200 -1050 600 2 -1050 600 0 600 0
+[end signals]
+[end]

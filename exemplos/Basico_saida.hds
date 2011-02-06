@@ -1,0 +1,23 @@
+# hades.models.Design file#  
+[name] Basico_saida.hds
+[components]
+hades.models.io.Ipin A -26400 -1650 @N 1001 null 0
+hades.models.io.Ipin B -23250 -900 @N 1001 null 0
+hades.models.io.Ipin C -26400 -150 @N 1001 null 0
+hades.models.gates.InvSmall dNot1 -16800 0 @N 1001 5.0E-9
+hades.models.gates.Or2 dOr -4350 0 @N 1001 1.0E-8
+hades.models.io.Opin Y -12600 600 @N 1001 5.0E-9
+hades.models.gates.And2 dAnd -21000 0 @N 1001 1.0E-8
+hades.models.io.Opin X 0 600 @N 1001 5.0E-9
+hades.models.gates.InvSmall dNot -8400 0 @N 1001 5.0E-9
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 w0 2 A Y dNot A 3 2 -26400 -1650 -8550 -1650 2 -8550 -1650 -8550 600 2 -8550 600 -8400 600 1 -8550 -1650
+hades.signals.SignalStdLogic1164 w1 2 dNot Y dOr A 3 2 -6600 600 -4650 600 2 -4650 600 -4650 600 2 -4650 600 -4350 600 0
+hades.signals.SignalStdLogic1164 w2 3 B Y dOr B dAnd A 6 2 -23250 -900 -4500 -900 2 -4500 -900 -4500 1800 2 -4500 1800 -4350 1800 2 -4500 -900 -21150 -900 2 -21150 -900 -21150 600 2 -21150 600 -21000 600 2 -4500 -900 -21150 -900
+hades.signals.SignalStdLogic1164 w3 2 dOr Y X A 3 2 -750 1200 -600 1200 2 -600 1200 -600 600 2 -600 600 0 600 0
+hades.signals.SignalStdLogic1164 w4 2 C Y dAnd B 3 2 -26400 -150 -21300 -150 2 -21300 -150 -21300 1800 2 -21300 1800 -21000 1800 1 -21300 -150
+hades.signals.SignalStdLogic1164 w5 2 dAnd Y dNot1 A 3 2 -17400 1200 -17250 1200 2 -17250 1200 -17250 600 2 -17250 600 -16800 600 0
+hades.signals.SignalStdLogic1164 w6 2 dNot1 Y Y A 3 2 -15000 600 -13050 600 2 -13050 600 -13050 600 2 -13050 600 -12600 600 0
+[end signals]
+[end]

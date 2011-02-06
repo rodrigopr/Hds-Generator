@@ -1,0 +1,28 @@
+# Arquivo usado pelo programa que ira gerar o arquivo do hades, usem esse formato, e lembrem-se que é case-sensitive.
+# OBS: No exemlpo existem duas portas com mesmo nome(SUB, ADD, SHL, e etc), uma entrada e outra saida,
+# 	   o Hades nao permite, coloquei um underline nas saidas
+
+# Definicao:
+
+
+
+# Arquivo de saida:
+HDSNAME: Basico_saida.hds
+
+# Portas de Entrada:
+INPUTPORTS: A B C
+
+# Portas de Saida:
+OUTPUTPORTS: X Y
+
+
+
+# Expressoes(Deve vir sempre apos a definicao acima)
+# Uma expressao por linha, pode-se usar parenteses. E And tem precedência sobre OR.
+# NOT = ! ou ~
+# AND = . ou *
+# OR  = +
+
+EXPRESSIONS:
+X = !(A.B) + !(B.C)
+Y = (!A.C) + B.C
