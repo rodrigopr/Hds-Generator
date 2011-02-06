@@ -46,8 +46,6 @@ public class HdsWriter {
 		organizeAll();
 		setupPosition();
 		setupWirePosition();
-		//TODO Limpar codigo da classe
-		//TODO Imprimir fios
 		
 		fw = new FileWriter(file);
 		fw.write("# hades.models.Design file\r#  "+"\n");

@@ -182,15 +182,15 @@ public class Interpreter {
 
 	private String[] splitExpr(String expr) {
 		expr = expr.trim()
-		           .replaceAll("  ", " ")
-		   		   .replaceAll("~", "!")
+        		   .replaceAll(" ", "")
+ 		   		   .replaceAll("~", "!")
 		   		   .replaceAll("\\!", " ! ")
 				   .replaceAll("\\+", " + ")
 				   .replaceAll("\\*", ".")
 				   .replaceAll("\\.", " . ")
 				   .replaceAll("\\(", "( ")
 				   .replaceAll("\\)", " )")
-				   .replaceAll("  ", " ")
+       			   .replaceAll("  ", " ")
 				   .trim();
 		return expr.split(" ");
 	}
